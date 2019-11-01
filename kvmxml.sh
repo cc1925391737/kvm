@@ -19,5 +19,3 @@ virsh start $NEWVM &>/dev/null && echo "已启动"
 else
 echo "Finish"
 fi
-~                                                                                                                                 
-~                                 
