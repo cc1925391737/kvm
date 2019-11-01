@@ -25,7 +25,7 @@ GATEWAY=192.168.175.2
 EOF
 
 
-mv /etc/sysconfig/network-scripts/ifcfg-ens33 /etc/sysconfig/network-scripts/ifcfg-ens33.bak
+cp /etc/sysconfig/network-scripts/ifcfg-ens33 /etc/sysconfig/network-scripts/ifcfg-ens33.bak
 
 cat > /etc/sysconfig/network-scripts/ifcfg-ens33 <<EOF
 TYPE="Ethernet"
@@ -41,6 +41,7 @@ lsmod | grep kvm
 #安装kvm所需组件
 yum -y install qemu-kvm libvirt virt-install
 yum -y groupinstall Virtualization "Virtualization Client"
+
 systemctl start libvirtd
 systemctl status libvirtd
 systemctl restart network

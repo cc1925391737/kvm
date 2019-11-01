@@ -1,0 +1,36 @@
+Virsh列表--all列出所有的虚拟机
+Virsh start + name运行指定VM
+Virsh shutdown +名称正常关闭指定VM
+virsh dominfo +名称查看虚拟机信息
+virsh setmem +名称+内存大小添加虚拟机内存
+virsh snapshot-create +名称创建快照
+--xmlfile域快照XML＃
+--redefine重新定义现有快照元数据＃
+--current使用redefice设置当前快照＃
+--no-metadata提取快照但不生成元数据
+--halt生成快照后停止
+--disk-only捕获磁盘状态而不是VM状态
+--reuse-external重新使用任意现有外部文件＃
+--quiesce静默虚拟机的文件系统＃
+--atomic需要自动操作
+--live提取实时快照
+virsh snapshot-list +名称查看该机器的快照
+virsh snapshot-revert +名称恢复指定机器的快照
+virsh snapshot-delete +名称删除指定快照
+virsh destroy +名称强制停止虚拟机
+virsh undefine +名称删除虚拟机
+virsh define + xml启动xml文件
+
+
+qemu-img info +磁盘阵列查看信息
+qemu-img resize +磁盘名称+内存添加磁盘内存
+QEMU-IMG快照
+-c创建快照
+-l列出某个特定所有快照
+-a使用快照
+-d删除快照
+
+virt-clone -d 虚拟机名称 +文件或目录    
+virt-copy-out -d 虚拟机名称 +指定目录     将虚拟机的文件复制出来
+virt-copy-in -d 虚拟机名称 +指定目录      将本地的文件复制到虚拟机里
+
