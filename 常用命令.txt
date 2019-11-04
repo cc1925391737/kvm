@@ -1,4 +1,3 @@
-Virsh列表--all列出所有的虚拟机
 Virsh start + name运行指定VM
 Virsh shutdown +名称正常关闭指定VM
 virsh dominfo +名称查看虚拟机信息
