@@ -64,8 +64,8 @@ rebase(){
 }
 
 
-if [ ${COUNTER} -ge ${MAX_COUNTER} ]; then      # After X snapshots...
-        rebase                                  # do a rebase.
+if [ ${COUNTER} -ge ${MAX_COUNTER} ]; then  
+        rebase                                  
 else
-        incremental                             # Or make a new incremental if not.
+        incremental                             
 fi
