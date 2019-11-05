@@ -35,7 +35,6 @@ increment_renaming(){
         chmod o=rw ${NOM_VM}.img
 
         echo "Snapshot ${NOM_INC}.img created, a copy has been created at $PWD/Backups."
-}
 
 rebase(){
         echo "Rebasing the snapshots."
